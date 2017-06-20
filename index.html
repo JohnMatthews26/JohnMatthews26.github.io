@@ -15,11 +15,11 @@
     <aside><H2>Ingredients</H2>
     <a name="Ingredients" />
     <ul>
-      <li> 7 lbs of cheese</li>
+      <li> 1 pack of shredded of cheese</li>
       <li> 1 pack of tortillas </li>
-      <li> 24 sticks of butter </li>
+      <li> 1 stick of butter </li>
       <li> an apron (not for consumption) </li>
-      <li> 4 lbs of chicken </li>
+      <li>  8 oz of chicken </li>
     </ul> </aside>
     <H2>Description</H2>
     <a name="Description" />
@@ -34,9 +34,9 @@
     <ol>
       <li> Put on your apron (you're going to need it)</li>
       <li> Put a pan on the stove and set the heat to medium. </li>
-      <li> Place all of the butter on the pan. </li>
+      <li> Place 1/8 of a stick of butter on the pan. </li>
       <li> Once the butter has melted, place a tortilla on the pan. </li>
-      <li> Put cheese on your tortilla. </li>
+      <li> Spread cheese evenly on one half of the tortilla. </li>
       <li> Place pieces of chicken on the tortilla (hopefully your chicken is cooked) </li>
       <li> Fold the tortilla in half and cover one side with the other. </li>
       <li> Wait until a side is golden brown and then flip. </li>
@@ -44,6 +44,40 @@
     </ol>
   </section>
 
+  <section>
+    <form action="/reviews" method="post">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name">
+
+      <label for="rating">Rating</label>
+      1<input type="radio" name="rating" value="1" checked>
+      2<input type="radio" name="rating" value="2">
+      3<input type="radio" name="rating" value="3">
+      4<input type="radio" name="rating" value="4">
+      5<input type="radio" name="rating" value="5">
+
+      <label for="expertise">Cooking Expertise</label>
+
+       <select id="expertise" name="expertise">
+         <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
+
+         <option value="Sometimes Cook">Sometimes Cook</option>
+
+         <option value="Cook Everyday">Cook Everyday</option>
+
+         <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+
+         <option value="Professional Chef">Professional Chef</option>
+       </select>
+
+       <label>Review
+         <textarea name="review" cols="30" rows="10"></textarea>
+       </label>
+
+       <input type="submit" value="Submit Review">
+       
+    </form>
+  </section>
     <footer><h6>I am the author of this delicious recipe!</h6></footer>
   </body>
 </html>
